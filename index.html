@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аура Музыки</title>
+    <!-- Вставили из другого сайта Шрифты и их Стили(Вставляем перед командой CSS стилем)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,500&display=swap" rel="stylesheet">
+    <!--Подключаем CSS-->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+<header>
+    <h1>Жанры Музыки</h1>
+    <img class = "BorberIMG" src="img/icons8-музыка-256.svg"
+    alt="Логотип" width="100px">
+</header>
+<main>
+    <!--Делаем ID для ссылок, чтобы переходили к нему-->
+    <!--Переходит на одной и тожей страницы-->
+    <section id="about">
+        <a href ="#contact-form.html">Связь</a>
+        <h2>Что такое музыка</h2>
+        <p class ="ConceptMusic"> Музыка - это удивительное искусство, способное переносить нас в разные эмоциональные состояния и миры. 
+            Через столетия музыка превратилась в множество разнообразных жанров, каждый из которых имеет свой уникальный стиль, характер и влияние на слушателей. 
+            На этой странице мы предлагаем вам ознакомиться с некоторыми из самых популярных жанров музыки и открыть для себя новые музыкальные горизонты.
+        </p>
+        <h3>Список жанров</h3>
+        <ol id="menu-circle">
+            <li> <img class = "RockImg" src="img/icons8-музыка-сша-48.png"><a href="Rock.html" target="_blank">Рок</a></li>
+            <li> <img class = "CantriImg" src="img/icons8-распознавание-голоса-50.png"><a href="Cantri.html" target="_blank">Кантри</a></li>
+            <li> <img class = "Hip-HopImg" src="img/Барабаны.png"><a href="Pop.html" target="_blank">Хип-хоп</a></li>
+            <li> <img class = "DgazImg" src="img/Пластинка.png" width="60px"><a href="Dgaz.html" target="_blank">Джаз</a></li>
+        </ol>
+        <h4>Список терминов</h4>
+        <dl>
+            <dt>Рок:</dt>
+                <dd>
+            Это одно из направлений популярной музыки с характерными ритмическими ощущениями.
+                </dd>
+            <dt>Джаз:</dt>
+                <dd>
+            Направление в музыке, которое возникло в США в самом начале XX века.
+                </dd>
+            <dt>Кантри:</dt>
+                <dd>
+            Обобщённое название формы музицирования, возникшей среди белого населения сельских районов юга и запада США.
+                </dd>
+            <dt>Поп:</dt>
+                <dd>
+            Cокращение от «популярный» и означает принадлежность к массовой культуре.
+                </dd>
+            </dl>
+    </section>
+    <section id="articles">
+        <h2>Контактная информация</h2>
+    </section>
+</main>
+<footer>
+<p>
+    &copy; Меня можно найти тут: 
+    <a 
+    href="https://portal.midis.info/" target="_blank"><img src="img/Мидис.jpg" width="40px">
+    </a> 
+    <a
+href="https://vk.com/" target="_blank"><img src="img/ВК.png" width="40px">
+    </a>
+</p>
+<!--Тег BR делает связь друг под другом. В один столбец-->
+<form id="contact-form.html">
+    <label for="topic">Тема</label><br>
+    <select name id="topic" id="topic" required>
+    <option value="1">Заказать услугу</option>
+    <option value="2">Написать отзыв</option>
+    <option value="3">Предложить сотрудничество</option>
+    <option value="4">Другое</option>
+    </select>
+    <div class="form_item">
+        <label for="name">Имя</label><br>
+            <input name="name" id="name" type="text" placeholder="Имя" required>
+    </div>
+    <div class="form_item">
+        <label for="name">Email</label><br>
+            <input name="name" id="name" type="email" placeholder="Email">
+    </div>
+    <div class="form_item">
+        <label for="tel">Телефон</label><br>
+            <input type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+            >
+    </div>
+    <div class="form_item">
+        <label for="data">Дата рождения</label><br>
+            <input type="date" pattern="[0-9]{2}\.[0-9]{2}\.[0-9]{4}"
+            >
+    </div>
+    <div class="form_item">
+        <label for="Web">Социальная сеть</label><br>
+            <input type="url">
+    </div>
+    <div>
+        <label for="textline">Многострочный текст</label><br>
+        <textarea id="textline" rows="6" placeholder="Текст" required></textarea>
+    </div>
+    <div>
+        <label>Какой Бутерброд?</label><br>
+            <input type="radio" name="optionB" id="optionB1" value="option1" checked="">Бутерброд с сыром</label>
+        </div>
+    <div>
+        <label>
+            <input type="radio" name="optionB" id="optionB1" value="option1" checked="">Бутерброд с икрой</label>
+        </div>
+    <div>
+        <label>
+            <input type="radio" name="optionB" id="optionB1" value="option1" checked="">Бутерброд с рыбой</label>
+        </div>
+        
+    <div>
+        <label id="political">
+            <input type="checkbox" value="" required>Политика конфедициальности</label>
+        </div>
+    <div class="form_item">
+        <input type="submit">
+    </div>
+ </form>
+</footer>
+</body>
+</html>
