@@ -5,6 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Аура Музыки</title>
+
+    <!-- Расширения для мобилки и браузеров-->
+    <meta name="theme-color" content="#4285f4">
+    <meta name="viewport" content="ya-title=#000000,ya-dock=fade">
+    <meta name="msapplication-navbutton-color" content="#4285f4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
+
+    <!-- Элементы делаю тут-->
+    <meta property="og:title" content="Аура Музыки">
+    <meta property="og:site_name" content="Сайт для жанров музыки">
+    <meta property="og:url" content="https://planformy.github.io/VUZ-Music/">
+    <meta property="og:description" content="Информационный сайт для разделов жанров музыки">
+    <meta property="og:image" content="https://planformy.github.io/img/Сердце.png">
+
+    <link rel="shortcut icon" href="icons/IndexForhead.ico">
+
     <!-- Вставили из другого сайта Шрифты и их Стили(Вставляем перед командой CSS стилем)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,17 +78,15 @@
     </section>
 </main>
 <footer>
-<p>
     &copy; Меня можно найти тут: 
     <a 
     href="https://portal.midis.info/" target="_blank"><img src="img/Мидис.jpg" width="40px">
     </a> 
     <a
-href="https://vk.com/" target="_blank"><img src="img/ВК.png" width="40px">
+    href="https://vk.com/" target="_blank"><img src="img/ВК.png" width="40px">
     </a>
-</p>
 <!--Тег BR делает связь друг под другом. В один столбец-->
-<form id="contact-form.html">
+<form class="contact_form" id="contact-form.html">
     <label for="topic">Тема</label><br>
     <select name id="topic" id="topic" required>
     <option value="1">Заказать услугу</option>
@@ -85,7 +100,7 @@ href="https://vk.com/" target="_blank"><img src="img/ВК.png" width="40px">
     </div>
     <div class="form_item">
         <label for="name">Email</label><br>
-            <input name="name" id="name" type="email" placeholder="Email">
+            <input name="name" id="name" type="email" placeholder="Email" required>
     </div>
     <div class="form_item">
         <label for="tel">Телефон</label><br>
@@ -111,11 +126,11 @@ href="https://vk.com/" target="_blank"><img src="img/ВК.png" width="40px">
         </div>
     <div>
         <label>
-            <input type="radio" name="optionB" id="optionB1" value="option1" checked="">Бутерброд с икрой</label>
+            <input type="radio" name="optionB" id="optionB1" value="option1">Бутерброд с икрой</label>
         </div>
     <div>
         <label>
-            <input type="radio" name="optionB" id="optionB1" value="option1" checked="">Бутерброд с рыбой</label>
+            <input type="radio" name="optionB" id="optionB1" value="option1">Бутерброд с рыбой</label>
         </div>
         
     <div>

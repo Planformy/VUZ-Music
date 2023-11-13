@@ -161,30 +161,15 @@ li{
 #contenthref{
     text-align:  center;
 }
-p.first-line{
-    text-decoration: underline;
+p::first-line{
     text-transform: uppercase;
     text-align: center;
-    color: red;
-    margin: 1%;
-}
-p.first-lineEN{
-    text-decoration: underline;
-    text-transform: uppercase;
-    text-align: center;
-    color: blue;
-    margin: 1%;
+    margin: 100px;
 }
 p.ConceptMusic{
     color: pink;
     border: 2px solid white;
 }
-/*#articles a:active{
-    color: black;
-}
-.menu-circle li:last-child{
-    background-color: gold;
-}*/
 img.RockImg{
     border: 1px solid white;
     margin: 3px 12px 0px 0px;
@@ -210,6 +195,7 @@ img.BorberIMG{
     border: 2px solid yellow;
     margin: 30px;
 }
+        /*Таблицы*/
 table{
     text-align: center;
     margin: auto;
@@ -243,7 +229,8 @@ tr:nth-child(6){
 tr:nth-child(9){
     background-color: brown;
 }
-#contact-form input[type="text"]{
+        /*Обратная связь*/
+#contact_form input[type="text"]{
     height: 15px;
     width: 200px;
     padding: 5px;
@@ -251,7 +238,7 @@ tr:nth-child(9){
     border: white solid 1px;
     background-color: rgb(200, 176, 223);
 }
-#contact-form input[type="email"]{
+#contact_form input[type="email"]{
     height: 15px;
     width: 200px;
     padding: 5px;
@@ -259,7 +246,7 @@ tr:nth-child(9){
     border: white solid 1px;
     background-color: rgb(200, 176, 223);
 }
-#contact-form input[type=submit]{
+#contact_form input[type=submit]{
     background-color: rgb(147, 107, 184);
     color: rgb(83, 20, 141);
     height: 35px;
@@ -268,8 +255,22 @@ tr:nth-child(9){
     text-transform: uppercase;
     font-style: oblique;
     font-weight: 700;
+    padding: 10px;
+    margin: auto;
 }
-#contact-form input[type=submit]:hover{
+.form_item input[type=submit]{
+    background-color: rgb(147, 107, 184);
+    color: rgb(83, 20, 141);
+    height: 35px;
+    width: 120px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-weight: 700;
+    padding: 10px;
+    margin: auto;
+}
+.form_item input[type=submit]:hover{
     background-color: rgb(200, 176, 223);
 }
 #topic{
@@ -289,11 +290,31 @@ tr:nth-child(9){
 form{
     border: 2px solid rgb(83, 20, 141);
     background-color: rgb(83, 20, 141);
-    width: 12%;
+    width: 240px;
     border-width: 10px;
     color: white;
     font-style: oblique;
     font-size: large;
     padding: 10px;
     margin: auto;
+}
+.form_item input[type=url]{
+    background-color: rgb(200, 176, 223);
+    padding: 5px;
+}
+.form_item input[type=email]{
+    background-color: rgb(200, 176, 223);
+    padding: 5px;
+}
+.form_item input[type=tel]{
+    background-color: rgb(200, 176, 223);
+    padding: 5px;
+}
+.form_item input[type=date]{
+    background-color: rgb(200, 176, 223);
+    padding: 5px;
+}
+.form_item input[type=text]{
+    background-color: rgb(200, 176, 223);
+    padding: 5px;
 }
